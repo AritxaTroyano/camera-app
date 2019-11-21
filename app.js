@@ -23,9 +23,9 @@ cameraTrigger.onclick = function() {
     cameraSensor.height = cameraView.videoHeight;
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
 
-    // Aqui podrias mandar esto a un server usando:
-    // const dataURL = cameraSensor.toDataURL("image/webp");
+    // You could send the image to the server via:
     /*
+        const dataURL = cameraSensor.toDataURL("image/webp");
         $.ajax({
             type: "POST",
             url: "http://aws.server/my-url",
